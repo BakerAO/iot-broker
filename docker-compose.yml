@@ -1,7 +1,9 @@
 version: "3.7"
 services:
   broker:
-    image: eclipse-mosquitto
+    build:
+      context: ./
+      dockerfile: dockerfile
     ports:
       - "1883:1883"
       - "8883:8883"
