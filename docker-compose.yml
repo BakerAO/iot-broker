@@ -6,7 +6,7 @@ services:
     build:
       context: ./
     ports:
-      - 27172:1883
-      - 38283:8883
+      - 1883:1883
+      - 8883:8883
     volumes:
       - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
